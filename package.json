@@ -1,7 +1,10 @@
 {
   "name": "git-hub-issues-panel",
   "version": "1.0.0",
+  "homepage": "https://anglerfishlyy.github.io/github-issues-panel",
   "scripts": {
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
     "dev": "webpack -w -c ./.config/webpack/webpack.config.ts --env development",
     "test": "jest --watch --onlyChanged",
@@ -40,6 +43,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-webpack-plugin": "^4.0.1",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "gh-pages": "^6.3.0",
     "glob": "^10.2.7",
     "identity-obj-proxy": "3.0.0",
     "imports-loader": "^5.0.0",
@@ -68,8 +72,8 @@
     "@emotion/css": "11.10.6",
     "@grafana/data": "^12.1.0",
     "@grafana/runtime": "^12.1.0",
-    "@grafana/ui": "^12.1.0",
     "@grafana/schema": "^12.1.0",
+    "@grafana/ui": "^12.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
