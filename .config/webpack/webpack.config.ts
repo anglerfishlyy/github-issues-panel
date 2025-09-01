@@ -206,7 +206,7 @@ const config = async (env: Env): Promise<Configuration> => {
           { from: hasReadme() ? 'README.md' : '../README.md', to: '.', force: true },
           { from: 'plugin.json', to: '.' },
           { from: '../LICENSE', to: '.' },
-
+          { from: '../CHANGELOG.md', to: '.', force: true },
           { from: '**/*.json', to: '.' },
           { from: '**/*.svg', to: '.', noErrorOnMissing: true },
           { from: '**/*.png', to: '.', noErrorOnMissing: true },
